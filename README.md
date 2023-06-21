@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First, install needed packages:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Development server
+
+Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
+```
+
+### Optimized build for production
+
+First, build the app
+
+```bash
+npm run build
+# or 
+yarn run build
+```
+
+Then, run the build
+
+```bash
+npm start
 # or
-pnpm dev
+yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Implemented Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Load shipments data from offline file
+- Display data in generated table
+- Provide a button in the table to open a panel to visualize details of single row
+- Implement delete button on the table
+- Implement update on Details panel
 
-## Learn More
+## Tech
 
-To learn more about Next.js, take a look at the following resources:
+- NextJS
+- Material UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
